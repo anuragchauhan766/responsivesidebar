@@ -75,16 +75,16 @@
     background-color: #1d1b31;
     display: none;
 }
+#checkbox_category ,#checkbox_post  ,#checkbox_plugins{
+    display: none;
+}
+#checkbox_category:checked + .sub-menu, #checkbox_post:checked + .sub-menu ,
+#checkbox_plugins:checked + .sub-menu{
+    display: block;
+} 
 
-.drop_catogory:hover #category_submenu{
-    display: block;
-}
-.drop_post:hover #post_submenu{
-    display: block;
-}
-.drop_plugins:hover #plugins_submenu{
-    display: block;
-}
+
+
 .nav .nav_links li .sub-menu a{
     padding: 7px 0;
     font-size: 15px;
