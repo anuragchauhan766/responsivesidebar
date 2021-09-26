@@ -8,8 +8,6 @@
     <title>side navigation bar</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
-    <!-- <script src="/js/script.js"></script> -->
-</head>
 
 <body>
     <div class="nav">
@@ -31,16 +29,18 @@
 
                 <div class="drop_catogory">
                     
+                    <input type="checkbox" id="checkbox_category">
                     <div class="icon_link">
                         <a href="#">
                             <i class='bx bxs-collection'></i>
                             <span class="link_name">Category</span>
                         </a>
                         <label for="checkbox_category">
-                            <i class='bx bx-chevron-down'></i>
+                            
+                                <i class='bx bx-chevron-down'></i>
+                            
                         </label>
-                        </div>
-                    <input type="checkbox" id="checkbox_category">
+                    </div>
                     <ul class="sub-menu" id="category_submenu">
                         <li><a href="#"> Web Design</a></li>
                         <li><a href="#"> Card Design</a></li>
@@ -51,6 +51,7 @@
             </li>
             <li>
                 <div class="drop_post">
+                    <input type="checkbox" id="checkbox_post">
 
                     <div class="icon_link">
                         <a href="#">
@@ -62,67 +63,66 @@
                             <i class='bx bx-chevron-down'></i>
                         </label>
                     </div>
-                    <input type="checkbox" id="checkbox_post">
                     <ul class="sub-menu" id="post_submenu">
                         <li><a href="#"> Html & CSS</a></li>
                         <li><a href="#"> Javascript</a></li>
                         <li><a href="#">PHP</a></li>
                     </ul>
-                    
+
                 </div>
-    </li>
-    <li>
-        <a href="#">
-            <i class='bx bx-pie-chart-alt-2'></i>
-            <span class="link_name">Analytics</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class='bx bx-line-chart-down'></i>
-            <span class="link_name">Chart</span>
-        </a>
-    </li>
-    <li>
-        <div class="drop_plugins">
-
-            <div class="icon_link">
+            </li>
+            <li>
                 <a href="#">
-                    <i class='bx bx-plug'></i>
-                    <span class="link_name">Plugins</span>
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">Analytics</span>
                 </a>
-                <label for="checkbox_plugins">
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link_name">Chart</span>
+                </a>
+            </li>
+            <li>
+                <div class="drop_plugins">
+                    <input type="checkbox" id="checkbox_plugins">
 
-                    <i class='bx bx-chevron-down'></i>
-                </label>
-            </div>
-            <input type="checkbox" id="checkbox_plugins">
-            <ul class="sub-menu" id="plugins_submenu">
-                <li><a href="#"> UI Face</a></li>
-                <li><a href="#"> Pigment</a></li>
-                <li><a href="#"> Box Icons</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <a href="#">
-            <i class='bx bx-compass'></i>
-            <span class="link_name">Explore</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class='bx bx-history'></i>
-            <span class="link_name">History</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class='bx bx-cog'></i>
-            <span class="link_name">Settings</span>
-        </a>
-    </li>
-    </ul>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-plug'></i>
+                            <span class="link_name">Plugins</span>
+                        </a>
+                        <label for="checkbox_plugins">
+
+                            <i class='bx bx-chevron-down'></i>
+                        </label>
+                    </div>
+                    <ul class="sub-menu" id="plugins_submenu">
+                        <li><a href="#"> UI Face</a></li>
+                        <li><a href="#"> Pigment</a></li>
+                        <li><a href="#"> Box Icons</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">Explore</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">History</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Settings</span>
+                </a>
+            </li>
+        </ul>
 
     </div>
 </body>
