@@ -24,6 +24,7 @@
     color: #11101d;
     font-size: 35px;
     margin: 0 15px;
+    cursor: pointer;
 }
 .home_section .home_content .text{
     color: #11101d;
@@ -137,6 +138,11 @@
 #checkbox_mainmenu:checked ~ .nav .nav_links li .sub-menu .link_name{
     display: block;
 }
+#checkbox_mainmenu:checked ~ .nav .nav_links li .drop #checkbox_category:checked ~ .sub-menu,
+#checkbox_mainmenu:checked ~ .nav .nav_links li .drop #checkbox_post:checked ~ .sub-menu,
+#checkbox_mainmenu:checked ~ .nav .nav_links li .drop #checkbox_plugins:checked ~ .sub-menu{
+    display: none;
+}
 
 #checkbox_mainmenu:checked ~ .nav .nav_links li:hover  .sub-menu{
     position: absolute;
@@ -146,7 +152,7 @@
     padding: 10px 20px;
     border-radius: 0 6px 6px 0;
     transition: all 0.4s ease;
-     display: block;
+     display: block !important; 
 }
 .nav.close .nav_links li  .sub-menu .link_name{
     font-size: 18px;
