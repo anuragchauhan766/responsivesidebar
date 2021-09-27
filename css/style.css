@@ -4,7 +4,43 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
 }
+.home_section{
+    position: relative;
+    background-color: #e4e9f7;
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.4s ease;
+
+}
+.home_section .home_content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.home_section .home_content .bx-menu {
+    color: #11101d;
+    font-size: 35px;
+    margin: 0 15px;
+}
+.home_section .home_content .text{
+    color: #11101d;
+    font-size: 26px;
+    font-weight: 600;
+}
+#checkbox_mainmenu:checked ~ .nav.close{
+    width: 78px;
+    
+
+
+}
+#checkbox_mainmenu:checked + .home_section{
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
 .nav{
     height: 100%;
     width: 260px;
@@ -13,8 +49,12 @@
     left: 0;
     background-color: #11101d;
     border-radius: 0 4px 4px 0;
+    z-index: 100;
+    transition: all 0.4s ease;
 }
-
+/* .nav.close{
+    width: 78px;
+} */
 
 .logo{
     width: 100%;
@@ -34,7 +74,20 @@
     font-size: 23px;
     font-weight: 600;
     color: #fff;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
 }
+#checkbox_mainmenu:checked ~ .nav.close .logo .logo_name{
+  display: none;
+
+}
+#checkbox_mainmenu:checked ~ .nav.close .nav_links li span{
+   display: none;
+}
+#checkbox_mainmenu:checked ~ .nav.close .nav_links li .drop .icon_link label i {
+    display: none;
+}
+
 .nav .nav_links {
     background-color: #11101d;
     height: 100%;
@@ -56,6 +109,7 @@
     line-height: 50px; 
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
 .nav .nav_links li a{
     color: #fff;
@@ -74,9 +128,53 @@
     margin-top: -10px;
     background-color: #1d1b31;
     display: none;
+    transition: all 0.4s ease;
+}
+.nav .nav_links li  .sub-menu .link_name{
+    display: none;
     
 }
-#checkbox_category ,#checkbox_post  ,#checkbox_plugins{
+#checkbox_mainmenu:checked ~ .nav .nav_links li .sub-menu .link_name{
+    display: block;
+}
+
+#checkbox_mainmenu:checked ~ .nav .nav_links li:hover  .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.4s ease;
+     display: block;
+}
+.nav.close .nav_links li  .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
+    
+}
+#checkbox_mainmenu:checked ~ .nav .nav_links li .sub-menu a{
+    opacity: 0.7;
+}
+#checkbox_mainmenu:checked ~ .nav .nav_links li .sub-menu a:hover{
+    opacity: 1;
+}
+/* .nav .nav_links li:hover  .sub-menu{
+    top: 0px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.nav .nav_links li  .sub-menu .link_name{
+    display: none;
+}
+.nav .nav_links li  .sub-menu.blank{
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+} */
+
+
+#checkbox_category ,#checkbox_post  ,#checkbox_plugins ,#checkbox_mainmenu{
     display: none;
 }
 
@@ -96,6 +194,7 @@
     font-size: 15px;
     opacity: 0.6;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 .nav .nav_links li .sub-menu a:hover{
     opacity: 1;
