@@ -31,6 +31,9 @@
     font-size: 26px;
     font-weight: 600;
 }
+/* @media  screen and (max-width:600px) {
+    
+} */
 #checkbox_mainmenu:checked ~ .nav.close{
     width: 78px;
     
